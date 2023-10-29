@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rasc3ta/stats_card)
-- Live Site URL: [Add live site URL here](https://rasc3ta.github.io/stats_card)
+- Solution URL: [github](https://github.com/Rasc3ta/stats_card)
+- Live Site URL: [live site](https://rasc3ta.github.io/stats_card)
 
 ### Built with
 
