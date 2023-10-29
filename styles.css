@@ -1,0 +1,160 @@
+html {
+    box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  height: 99vh;
+  width: 98vw;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-wrapper {
+  text-align: center;
+  border-radius: 0.5em;
+  background-color: hsl(244, 38%, 16%);
+  width: 90vw;
+  height: 87vh;
+}
+
+.img {
+  max-height: 560px;
+  background-image: linear-gradient(
+      hsla(277, 63%, 43%, 0.5),
+      hsl(277, 63%, 43%, 0.5)
+    ),
+    url(./images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 67vw;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.content {
+  padding: 1em 2em;
+}
+
+h1,
+.big-bold {
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  font-size: 1.75em;
+  margin: 0em 3vw;
+}
+
+p {
+  font-size: 1.020em;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 0em;
+}
+
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+
+.big-bold {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.highlights-wrapper {
+  margin-top: 0em;
+  list-style-type: none;
+  padding-left: 0em;
+  display: flex;
+  flex-flow: column wrap;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.highlight {
+  display: flex;
+  flex-flow: column;
+  margin: 0.75em 0em;
+}
+
+.highlight-heading {
+  margin-top: 0.5em;
+}
+@media (min-width: 510px) {
+  .highlights-wrapper {
+    flex-flow: row wrap;
+    
+    margin-left: 2vw;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width:1024px) {
+  .card-wrapper {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content, .img {
+    max-width: 50%;
+    width: 50%;
+    min-width: 50%;
+  }
+
+  .img {
+    max-height: 100%;
+    border-radius: 0em .5em .5em 0em;
+    order: 1;
+  }
+
+  .content {
+    position: relative;
+    /* max-width: 100%; */
+    width: auto;
+    padding: 0em;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
+  h1, p {
+    margin-top: 0em;
+    text-align: left;
+  }
+
+  h1 {
+    margin-left: 0em;
+    margin-right: 13vw;
+    margin-bottom: .75em;
+    font-size: 2.25em;
+  }
+  
+  p {
+    margin-right: 15vw;
+    font-size: .925em;
+    line-height: 1.75;
+  }
+
+  .highlights-wrapper {
+    margin-left: 0em;
+    position: absolute;
+    bottom: 2.25vw;
+  }
+
+  .highlight {
+    text-align: left;
+    margin-right: 5.5vw;
+    font-size: .9em;
+  }
+
+  
+}
